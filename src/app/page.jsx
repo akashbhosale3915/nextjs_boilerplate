@@ -9,17 +9,16 @@ export default function Home() {
   );
   return (
     <main
-      className={`${
-        darkMode
-          ? "bg-black text-white"
-          : "bg-white text-black"
-      } h-screen`}
+      className={`flex flex-col justify-center items-center h-screen ${
+        darkMode ? "dark" : "light"
+      }`}
     >
-      <h1>Nextjs Boilerplate Project</h1>
+      <h1 className="text-5xl mb-10 w-1/2 text-center leading-tight">
+        Nextjs boilerplate project with redux and nextauth
+      </h1>
       <button
-        onClick={() => {
-          dispatch(toggleTheme());
-        }}
+        onClick={() => dispatch(toggleTheme())}
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
       >
         Toggle BG
       </button>

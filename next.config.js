@@ -1,4 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const { secret } = require("./env");
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+
+const nextConfig = {
+  env: secret || {},
+};
+
+module.exports = nextConfig;

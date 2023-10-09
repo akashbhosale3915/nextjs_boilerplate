@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npx gulp && next dev",
+    "build": "npx gulp prod && next build",
+    "build:uat": "npx gulp uat && next build",
     "start": "next start",
     "lint": "next lint"
   },
