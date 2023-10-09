@@ -9,3 +9,13 @@
 .light {
   @apply bg-white text-black;
 }
+
+.gradient {
+  background: linear-gradient(45deg, #0075c9, #76c2b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  text-shadow: none;
+}

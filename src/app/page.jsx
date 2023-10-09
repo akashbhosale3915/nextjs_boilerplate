@@ -13,7 +13,7 @@ export default function Home() {
         darkMode ? "dark" : "light"
       }`}
     >
-      <h1 className="text-5xl mb-10 w-1/2 text-center leading-tight">
+      <h1 className="text-5xl mb-10 w-1/2 text-center leading-tight gradient font-bold">
         Nextjs boilerplate project with redux and nextauth
       </h1>
       <button
